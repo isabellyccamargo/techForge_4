@@ -42,7 +42,7 @@ class Operario extends Funcionario {
 function calcularSalarioComBonus(funcionarios: Funcionario[]): void {
     funcionarios.forEach(f => {
         const salarioFinal = f.getSalario() + f.calcularBonus();
-        console.log(`${f.getNome()} - Salário Final: R$ ${salarioFinal.toFixed(2)}`);
+        console.log(f.getNome() + " - Salário Final: R$" + salarioFinal.toFixed(2));
     });
 }
 
