@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "rootDir": "./",      // Pega os arquivos .ts na pasta atual (trilha_2)
+    "outDir": "./dist",   // Coloca os resultados na subpasta 'dist' da trilha_2
+    "esModuleInterop": true,
+    "strict": true
+  },
+  "include": [
+    "./**/*.ts" // Garante que todos os arquivos .ts na pasta sejam incluídos
+  ],
+  "exclude": [
+    "node_modules",
+    "dist" // Não tente compilar arquivos que já estão em 'dist'
+  ]
+}
