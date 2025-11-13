@@ -24,8 +24,8 @@ var Animal = /** @class */ (function () {
     Animal.prototype.setEnergia = function (valor) {
         this.energia = valor;
     };
-    Animal.prototype.comer = function (quantidade) {
-        this.energia += quantidade;
+    Animal.prototype.comer = function (quantidde) {
+        this.energia += quantidde;
     };
     return Animal;
 }());
@@ -37,12 +37,12 @@ var Leao = /** @class */ (function (_super) {
     Leao.prototype.alimentar = function () {
         console.log("O leão está caçando...");
         this.setEnergia(this.getEnergia() - 20);
-        console.log("Energia após caçar: " + this.getEnergia());
+        console.log("Energia após caçar:" + this.getEnergia());
         this.comer(40);
-        console.log("Energia após comer: " + this.getEnergia());
+        console.log("Energia após comer:" + this.getEnergia());
     };
     Leao.prototype.statusEnergia = function () {
-        console.log("A energia deste animal está em: " + this.getEnergia());
+        console.log("A energia deste animal está em: " + this.getEnergia);
     };
     return Leao;
 }(Animal));
@@ -56,13 +56,9 @@ var Passaro = /** @class */ (function (_super) {
         this.comer(15);
     };
     Passaro.prototype.statusEnergia = function () {
-        console.log("A energia deste animal está em: " + this.getEnergia());
+        console.log("A energia deste animal está em: " + this.getEnergia);
     };
     return Passaro;
 }(Animal));
 var leao = new Leao(100);
 var passaro = new Passaro(30);
-leao.alimentar();
-leao.statusEnergia();
-passaro.alimentar();
-passaro.statusEnergia();
